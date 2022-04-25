@@ -1,0 +1,111 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "score": [
+    {
+      "name": "Steve",
+      "score": "94",
+      "id": 2
+    },
+    {
+      "id": 3,
+      "name": "Scott",
+      "score": 72
+    },
+    {
+      "id": 5,
+      "name": "Bruce",
+      "score": 77
+    },
+    {
+      "id": 6,
+      "name": "Denvers",
+      "score": 82
+    },
+    {
+      "id": 7,
+      "name": "Pepper",
+      "score": 91
+    },
+    {
+      "name": "Clintas",
+      "score": 84,
+      "id": 8
+    },
+    {
+      "id": 9,
+      "name": "Barton",
+      "score": 90
+    },
+    {
+      "id": 10,
+      "name": "Stacey",
+      "score": 88
+    },
+    {
+      "id": 11,
+      "name": "Wanda",
+      "score": 50
+    },
+    {
+      "id": 12,
+      "name": "Peter",
+      "score": 79
+    },
+    {
+      "name": "Jamesss",
+      "score": 84,
+      "id": 13
+    },
+    {
+      "id": 14,
+      "name": "Shang",
+      "score": 85
+    },
+    {
+      "name": "aviasd",
+      "score": "80",
+      "id": 15
+    },
+    {
+      "name": "nana",
+      "score": "95",
+      "id": 18
+    },
+    {
+      "name": "Joko",
+      "score": "93",
+      "id": 19
+    },
+    {
+      "name": "12",
+      "score": "ad",
+      "id": 20
+    },
+    {
+      "name": "asdasd",
+      "score": "asd",
+      "id": 21
+    },
+    {
+      "name": "asd",
+      "score": "12",
+      "id": 22
+    }
+  ]
+}
