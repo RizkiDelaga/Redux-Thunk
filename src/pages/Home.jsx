@@ -1,11 +1,13 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
+import { useNavigate } from 'react-router-dom';
 import { Button, Card, Col, Container, Row } from 'reactstrap';
 import { getScore, createScore, editScore, deleteScore } from '../redux/actions/scoreAction';
 import Test from './test';
 
 
 function Home() {
+  const navigate = useNavigate()
     const [id, setId] = React.useState();
     const [name, setName] = React.useState();
     const [score, setScore] = React.useState();
@@ -46,6 +48,11 @@ function Home() {
         dispatch1(editScore(id, data));
         resetForm();
       };
+
+      const handleLogout = () => {
+        localStorage.clear()
+        navigate("/login")
+      }
       
     return (
         <React.Fragment>
@@ -75,6 +82,8 @@ function Home() {
 
                 <h1 className='fw-bold text-center py-4 mt-2' style={{borderBottom: "4px solid red", borderTop: "4px solid red"}}>Ceritanya Data Score Ujian Mahasiswa</h1>
                 <div className="text-end" style={{position: "fixed", zIndex: "10", bottom: "0", right: "0"}}>
+                <Button color='primary' variant='contained' onClick={() => {
+                  handleLogout()}}>Logout</Button>
                     <Button type="button" color='primary' className='rounded-circle'style={{width: "60px", height: "60px", marginBottom: "40px", marginRight: "40px"}} data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa fa-solid fa-plus"></i></Button>
                 </div>
                 
